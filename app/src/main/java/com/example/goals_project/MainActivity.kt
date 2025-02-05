@@ -13,11 +13,13 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.bottomsheet.BottomSheetDialog
+public class MainActivity : AppCompatActivity() {
 
-class MainActivity : AppCompatActivity() {
 
-   // private lateinit var button: Button
+    private lateinit var navview: BottomNavigationView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,36 +27,49 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        val btnShare = findViewById<Button>(R.id.ShareButton)
+        navview = findViewById(R.id.nav_view)
 
-        btnShare.setOnClickListener {
+        replace(HomeFragment())
 
-            val shareBody = "https://www.youtube.com/"
-            val shareSub = "https://www.youtube.com/"
-
-            val shareIntent = Intent(Intent.ACTION_SEND)
-            shareIntent.type = "text/plain"
-
-            shareIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub)
-            shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody)
-
-            startActivity(shareIntent)
-
+        navview.setOnItemSelectedListener {
+            when(it.itemId){
+                R.id.home->replace(HomeFragment())
+                R.id.profile->replace(ProfileFragment())
+            }
+            true
         }
 
-    /**    button = findViewById(R.id.ShareButton)
 
-        val url = "https://www.youtube.com/"
+//        val btnShare = findViewById<Button>(R.id.ShareButton)
+//
+//        btnShare.setOnClickListener {
+//
+//            val shareBody = "https://www.youtube.com/"
+//            val shareSub = "https://www.youtube.com/"
+//
+//            val shareIntent = Intent(Intent.ACTION_SEND)
+//            shareIntent.type = "text/plain"
+//
+//            shareIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub)
+//            shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody)
+//
+//            startActivity(shareIntent)
+//
+//        }
 
-
-        button.setOnClickListener {
-
-            val intent = Intent(Intent.ACTION_SEND)
-            intent . putExtra ("Share this",url)
-            val chooser = Intent.createChooser(intent, "Share using...")
-            startActivity(chooser)
-
-        }  **/
+//        button = findViewById(R.id.ShareButton)
+//
+//        val url = "https://www.youtube.com/"
+//
+//
+//        button.setOnClickListener {
+//
+//            val intent = Intent(Intent.ACTION_SEND)
+//            intent . putExtra ("Share this",url)
+//            val chooser = Intent.createChooser(intent, "Share using...")
+//            startActivity(chooser)
+//
+//        }
 
 
         /**  val btn = findViewById<Button>(R.id.btnSubmit) as Button
@@ -67,12 +82,15 @@ class MainActivity : AppCompatActivity() {
 
         } **/
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
     }
 
+   private fun replace(fragment: Fragment) {
+
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.navhost, fragment)
+        transaction.commit()
+
+    }
 
 }
+

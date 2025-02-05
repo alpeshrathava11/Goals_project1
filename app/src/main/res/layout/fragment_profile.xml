@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/userImage"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_120sdp"
             android:layout_gravity="center"
@@ -19,6 +20,7 @@
             android:src="@drawable/image" />
 
         <TextView
+            android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -37,7 +39,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:id="@+id/clickLogin">
 
             <ImageView
                 android:layout_width="@dimen/_20sdp"
@@ -47,6 +50,7 @@
                 android:src="@drawable/img" />
 
             <TextView
+                android:id="@+id/userSignIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_8sdp"
@@ -61,6 +65,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
                     android:layout_gravity="end"
@@ -69,7 +74,6 @@
                     android:src="@drawable/baseline_arrow_forward_ios_24" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -86,6 +90,7 @@
                 android:src="@drawable/img_1" />
 
             <TextView
+                android:id="@+id/userNotification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_8sdp"
@@ -109,7 +114,6 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
 
         <LinearLayout
@@ -125,6 +129,7 @@
                 android:src="@drawable/img_2" />
 
             <TextView
+                android:id="@+id/userPrivacy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_8sdp"
@@ -148,10 +153,10 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/feedbackClick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -164,6 +169,7 @@
                 android:src="@drawable/img_3" />
 
             <TextView
+                android:id="@+id/userFeedback"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_8sdp"
@@ -187,10 +193,10 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/shareAppIntent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -203,6 +209,7 @@
                 android:src="@drawable/img_4" />
 
             <TextView
+                android:id="@+id/userShareApp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_8sdp"
@@ -226,10 +233,8 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>
