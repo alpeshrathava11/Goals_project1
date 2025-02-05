@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpFragment"
+    tools:context=".LoginActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,16 +14,17 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/clickBackIcon"
             android:layout_width="@dimen/_20sdp"
             android:layout_height="@dimen/_20sdp"
             android:src="@drawable/baseline_arrow_back_ios_24"
             android:layout_marginLeft="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_30sdp" />
+            android:layout_marginTop="@dimen/_40sdp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create Your Account"
+            android:text="Login to your Account"
             android:textSize="@dimen/_20sdp"
             android:textColor="@color/black"
             android:textStyle="bold"
@@ -36,24 +39,10 @@
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_30sdp"
             android:padding="@dimen/_8sdp"
-            android:drawableLeft="@drawable/img_8"
-            android:hint="Username"
-            android:drawablePadding="@dimen/_8sdp"
-            android:textSize="@dimen/_16sdp"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp"
-            android:background="@drawable/login_style_1"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:padding="@dimen/_8sdp"
             android:drawableLeft="@drawable/img_5"
             android:hint="Email"
             android:drawablePadding="@dimen/_8sdp"
             android:textSize="@dimen/_16sdp"/>
-
 
         <EditText
             android:layout_width="match_parent"
@@ -68,15 +57,18 @@
             android:drawablePadding="@dimen/_8sdp"
             android:textSize="@dimen/_16sdp" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_30sdp"
-            android:text="Sign In"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:background="@drawable/custom_button"
+            android:text="Login"
             android:textSize="@dimen/_20sdp"
-            android:background="@drawable/login_style_1"/>
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -92,20 +84,21 @@
             android:background="@drawable/login_style_2"
             android:layout_marginRight="@dimen/_30sdp"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_50sdp"
             android:textSize="@dimen/_18sdp"
             android:text="Google Sign In"
             android:gravity="center"
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/clickSignUp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="don't have an account ? Sign up"
             android:textStyle="bold"
             android:textSize="@dimen/_12sdp"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_25sdp"/>
+            android:layout_marginTop="@dimen/_30sdp"/>
 
     </LinearLayout>
 

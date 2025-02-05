@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Goals_project"
         tools:targetApi="31">
         <activity
+            android:name=".click_with_open_image"
+            android:exported="false" />
+        <activity
+            android:name=".motivation_video_screen"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationSongScreen"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationImage"
+            android:exported="false" />
+        <activity
+            android:name=".MotivationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
