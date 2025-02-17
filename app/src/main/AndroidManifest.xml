@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Goals_project"
         tools:targetApi="31">
         <activity
+            android:name=".show_with_image_list"
+            android:exported="false" />
+        <activity
             android:name=".click_with_open_image"
             android:exported="false" />
         <activity

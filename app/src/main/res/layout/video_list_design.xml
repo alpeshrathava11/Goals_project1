@@ -10,11 +10,12 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="@dimen/_160sdp"
-            android:background="@drawable/category_button"
             android:layout_margin="@dimen/_12sdp"
+            android:background="@drawable/category_button"
             android:src="@drawable/img_21">
 
-    </ImageView>
+        </ImageView>
 
+    </LinearLayout>
 
 </LinearLayout>
