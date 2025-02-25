@@ -40,37 +40,19 @@ public class MainActivity : AppCompatActivity() {
             true
         }
 
+    /**    button = findViewById(R.id.ShareButton)
 
-//        val btnShare = findViewById<Button>(R.id.ShareButton)
-//
-//        btnShare.setOnClickListener {
-//
-//            val shareBody = "https://www.youtube.com/"
-//            val shareSub = "https://www.youtube.com/"
-//
-//            val shareIntent = Intent(Intent.ACTION_SEND)
-//            shareIntent.type = "text/plain"
-//
-//            shareIntent.putExtra(Intent.EXTRA_SUBJECT,shareSub)
-//            shareIntent.putExtra(Intent.EXTRA_TEXT,shareBody)
-//
-//            startActivity(shareIntent)
-//
-//        }
+        val url = "https://www.youtube.com/"
 
-//        button = findViewById(R.id.ShareButton)
-//
-//        val url = "https://www.youtube.com/"
-//
-//
-//        button.setOnClickListener {
-//
-//            val intent = Intent(Intent.ACTION_SEND)
-//            intent . putExtra ("Share this",url)
-//            val chooser = Intent.createChooser(intent, "Share using...")
-//            startActivity(chooser)
-//
-//        }
+
+        button.setOnClickListener {
+
+            val intent = Intent(Intent.ACTION_SEND)
+            intent . putExtra ("Share this",url)
+            val chooser = Intent.createChooser(intent, "Share using...")
+            startActivity(chooser)
+
+        }  **/
 
 
         /**  val btn = findViewById<Button>(R.id.btnSubmit) as Button
