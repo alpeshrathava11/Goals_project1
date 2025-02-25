@@ -39,7 +39,7 @@
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_30sdp"
             android:padding="@dimen/_8sdp"
-            android:drawableLeft="@drawable/img_5"
+            android:drawableLeft="@drawable/email_icon"
             android:hint="Email"
             android:drawablePadding="@dimen/_8sdp"
             android:textSize="@dimen/_16sdp"/>
@@ -52,7 +52,7 @@
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:padding="@dimen/_8sdp"
-            android:drawableLeft="@drawable/img_6"
+            android:drawableLeft="@drawable/password_icon"
             android:hint="Password"
             android:drawablePadding="@dimen/_8sdp"
             android:textSize="@dimen/_16sdp" />

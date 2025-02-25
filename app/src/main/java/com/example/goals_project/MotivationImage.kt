@@ -30,27 +30,27 @@ class MotivationImage : AppCompatActivity() {
 
         // Applying blur transformation to the image using Glide
         Glide.with(this)
-            .load(R.drawable.img_16)  // Update this with your actual image resource or URL
+            .load(R.drawable.nature_image)  // Update this with your actual image resource or URL
             .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 2)))
             .into(nature_Image!!)
 
         Glide.with(this)
-            .load(R.drawable.img_17)  // Update this with your actual image resource or URL
+            .load(R.drawable.popular_image)  // Update this with your actual image resource or URL
             .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 2)))
             .into(popular_Image!!)
 
         Glide.with(this)
-            .load(R.drawable.img_23)  // Update this with your actual image resource or URL
+            .load(R.drawable.life_image)  // Update this with your actual image resource or URL
             .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 2)))
             .into(life_Image!!)
 
         Glide.with(this)
-            .load(R.drawable.img_24)  // Update this with your actual image resource or URL
+            .load(R.drawable.song_design_image)  // Update this with your actual image resource or URL
             .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 2)))
             .into(positive_Image!!)
 
         Glide.with(this)
-            .load(R.drawable.img_22)  // Update this with your actual image resource or URL
+            .load(R.drawable.confidence_image)  // Update this with your actual image resource or URL
             .apply(RequestOptions.bitmapTransform(BlurTransformation(25, 2)))
             .into(confidence_Image!!)
 

@@ -42,7 +42,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/img_14"
+                        android:src="@drawable/motivation_song_image"
                         android:layout_weight="1" />
 
                     <TextView
@@ -75,7 +75,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:src="@drawable/img_13" />
+                        android:src="@drawable/motivation_video_image" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/img_15"
+                            android:src="@drawable/motivation_image"
                             android:layout_gravity="center"
                             android:layout_weight="1"/>
 

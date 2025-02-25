@@ -36,7 +36,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/img_27" />
+                            android:src="@drawable/open_image" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -50,19 +50,19 @@
                             android:layout_width="@dimen/_18sdp"
                             android:layout_height="@dimen/_18sdp"
                             android:layout_weight="1"
-                            android:src="@drawable/like_1" />
+                            android:src="@drawable/like_icon" />
 
                         <ImageView
                             android:layout_width="@dimen/_18sdp"
                             android:layout_height="@dimen/_18sdp"
                             android:layout_weight="1"
-                            android:src="@drawable/download_1" />
+                            android:src="@drawable/download_icon" />
 
                         <ImageView
                             android:layout_width="@dimen/_18sdp"
                             android:layout_height="@dimen/_18sdp"
                             android:layout_weight="1"
-                            android:src="@drawable/save_1" />
+                            android:src="@drawable/save_icon" />
 
                     </LinearLayout>
 
@@ -84,7 +84,7 @@
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/img_27" />
+                            android:src="@drawable/open_image" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -98,25 +98,23 @@
                             android:layout_width="@dimen/_18sdp"
                             android:layout_height="@dimen/_18sdp"
                             android:layout_weight="1"
-                            android:src="@drawable/like_1" />
+                            android:src="@drawable/like_icon" />
 
                         <ImageView
                             android:layout_width="@dimen/_18sdp"
                             android:layout_height="@dimen/_18sdp"
                             android:layout_weight="1"
-                            android:src="@drawable/download_1" />
+                            android:src="@drawable/download_icon" />
 
                         <ImageView
                             android:layout_width="@dimen/_18sdp"
                             android:layout_height="@dimen/_18sdp"
                             android:layout_weight="1"
-                            android:src="@drawable/save_1" />
+                            android:src="@drawable/save_icon" />
 
                     </LinearLayout>
 
-
                 </LinearLayout>
-
 
             </LinearLayout>
 

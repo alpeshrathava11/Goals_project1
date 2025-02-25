@@ -17,7 +17,7 @@
             android:layout_height="@dimen/_120sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_35sdp"
-            android:src="@drawable/image" />
+            android:src="@drawable/profile_image" />
 
         <TextView
             android:id="@+id/userName"
@@ -47,7 +47,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/img" />
+                android:src="@drawable/google_icon" />
 
             <TextView
                 android:id="@+id/userSignIn"
@@ -87,7 +87,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/img_1" />
+                android:src="@drawable/notification_icon" />
 
             <TextView
                 android:id="@+id/userNotification"
@@ -126,7 +126,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/img_2" />
+                android:src="@drawable/privacy_icon" />
 
             <TextView
                 android:id="@+id/userPrivacy"
@@ -166,7 +166,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/img_3" />
+                android:src="@drawable/feedback_icon" />
 
             <TextView
                 android:id="@+id/userFeedback"
@@ -206,7 +206,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/img_4" />
+                android:src="@drawable/share_icon" />
 
             <TextView
                 android:id="@+id/userShareApp"
@@ -246,7 +246,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginLeft="@dimen/_30sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/power" />
+                android:src="@drawable/logout_icon" />
 
             <TextView
                 android:id="@+id/userLogout"
